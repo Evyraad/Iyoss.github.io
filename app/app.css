@@ -1,55 +1,52 @@
-/*
- *  Place all the styles related to the mixin here.
- */
 body {
-  background: url(png/greyzz.png) repeat;
-  color: #444444 !important;
+	background: url(png/greyzz.png) repeat;
+	color: #444444 !important;
 }
 .container {
-  max-width: 700px;
+	max-width: 700px;
 }
 .container__tasks-list .tasks-lis__one-task {
-  background-color: rgba(255, 255, 255, 0.69);
-  padding: 20px;
-  margin: 20px;
-  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+	background-color: rgba(255, 255, 255, .69);
+	padding: 20px;
+	margin: 20px;
+	-webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, .1);
+	-moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, .1);
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, .1);
 }
 .container__tasks-list .tasks-lis__one-task .one-task__header-task,
 .container__tasks-list .tasks-lis__one-task .one-task__body-task,
 .container__tasks-list .tasks-lis__one-task .one-task__payment,
 .container__tasks-list .tasks-lis__one-task .one-task__time,
 .container__tasks-list .tasks-lis__one-task .one-task__amount {
-  margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 @media (min-width: 600px) {
-  .container__tasks-list .tasks-lis__one-task .one-task__payment .payment__input-group {
-    width: 30%;
-  }
+	.container__tasks-list .tasks-lis__one-task .one-task__payment .payment__input-group {
+		width: 30%;
+	}
 }
 .container__tasks-list .tasks-lis__one-task .one-task__time {
-  font-size: 20px;
+	font-size: 20px;
 }
 .container__tasks-list .tasks-lis__one-task .one-task__groop-button {
-  float: right;
-  margin: 30px 0 10px;
+	float: right;
+	margin: 30px 0 10px;
 }
 @media (max-width: 600px) {
-  .container__tasks-list .tasks-lis__one-task .one-task__groop-button {
-    text-align: right;
-    float: none;
-    margin-top: 0;
-  }
+	.container__tasks-list .tasks-lis__one-task .one-task__groop-button {
+		text-align: right;
+		float: none;
+		margin-top: 0;
+	}
 }
 .container__tasks-list .tasks-lis__one-task .one-task__amount {
-  font-size: 16px;
+	font-size: 16px;
 }
 .container__tasks-list .tasks-lis__one-task .one-task__amount .amoun__text_complete {
-  border-bottom: 2px solid;
-  color: #5cb85c;
+	border-bottom: 2px solid;
+	color: #5cb85c;
 }
 .container__add-task {
-  margin-left: 25px;
+	margin-left: 25px;
 }
 /*# sourceMappingURL=app.css.map */
