@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>My AngularJS App</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+        <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+        <link rel="stylesheet" href="app.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <div ng-controller="TimeTracker" class="container">
+            <h3>Your tasks</h3>
+            <div class="row container__tasks-list">
+                <article class="col-lg-12 tasks-lis__one-task" ng-repeat="task in dataTasks">
+                    <div class="one-task__header-task">
+                        <input class="form-control" type="text" ng-model="task.nameTask" placeholder="Name of the task">
+                    </div>
+                    <div class="one-task__body-task">
+                        <p>Description:</p>
+                        <textarea rows="3" maxlength="2500" class="form-control" ng-model="task.taskValue" ng-maxlength="500"></textarea>
+                    </div>
+                    <div class="one-task__groop-button">
+                        <a type="button" class="btn btn-default" ng-click="start(task)" ng-class="{true: 'disabled', false: ''}[task.buttonStartActive]">start</a>
+                        <a type="button" class="btn btn-default" ng-click="stop(task)" ng-class="{true: 'disabled', false: ''}[task.buttonStopActive]">stop</a>
+                        <a type="button" class="btn btn-default" ng-click="completed(task)" ng-class="{true: 'btn-success', false: ''}[task.isDisabled]">complete</a>
+                    </div>
+                    <div class="one-task__payment">
+                        <p>Hourly rate:</p>
+                        <div class="payment__input-group input-group" ng-class="{true: 'has-error', false: ''}[task.showAmountError]">
+                            <span class="input-group-addon">rub.</span>
+                            <input type="number" name="payment" class="form-control" ng-disabled="task.isDisabled" min ="0" ng-model="task.payment">
+                        </div>
+                    </div>
+                    <div class="one-task__time text-center">
+                        <p><strong>{{task.timeHours}} : {{task.timeMinutes}} : {{task.timeSeconds}}</strong></p>
+                    </div>
+                    <div class="one-task__amount">
+                        <p ng-class="{true: 'amoun__text_complete', false: ''}[task.isDisabled]">
+                            <strong><span>Amount: </span>{{amount(task)}}<span> rubles</span></strong>
+                        </p>
+                    </div>
+                    <div class="one-task__remove-task text-right">
+                        <p><a type="button" class="btn btn-default" href="" ng-click="removeTask(task)">remove</a></p>
+                    </div>
+                </article>
+            </div>
+            <div class="container__add-task">
+                <p><a type="button" class="btn btn-default" href="" ng-click="addTask()">add new task</a></p>
+            </div>
+        </div>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- In production use:
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+        -->
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular-route/angular-route.js"></script>
+        <script src="app.js"></script>
+        <script src="components/version/version.js"></script>
+        <script src="components/version/version-directive.js"></script>
+        <script src="components/version/interpolate-filter.js"></script>
+        <script src="modules/ionic-utils.js"></script>
+        <script src="modules/ui-bootstrap-custom-0.13.3.min.js"></script>
+    </body>
+</html>

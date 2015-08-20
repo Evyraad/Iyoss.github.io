@@ -1,0 +1,93 @@
+/*
+ *  Place all the styles related to the mixin here.
+ */
+// *********************************************************************************************************************
+// MY MIX
+//points to the sidebar left
+.point() {
+    background: radial-gradient(circle at center center , @main-color 2px, transparent 3px, transparent) repeat-x;
+    background-size: 15px 4px;    
+}
+//carousel
+.transform-X(@translateX){
+    transform: translateX(@translateX);
+    -webkit-transform: translateX(@translateX);
+    -moz-transform: translateX(@translateX);
+    -ms-transform: translateX(@translateX);
+    -o-transform: translateX(@translateX);
+}    
+.transition(@string1, @string2){        
+    transition: @string1, @string2 ;
+    -webkit-transition: @string1, @string2;
+    -o-transition: @string1, @string2;
+    -moz-transition: @string1, @string2;
+    -ms-transition: @string1, @string2;
+}
+.transform-X-rotate(@translateX, @deg){
+    transform: translateX(@translateX) rotate(@deg);
+    -webkit-transform: translateX(@translateX) rotate(@deg);
+    -moz-transform: translateX(@translateX) rotate(@deg);
+    -ms-transform: translateX(@translateX) rotate(@deg);
+    -o-transform: translateX(@translateX) rotate(@deg);   
+}
+// *********************************************************************************************************************
+// FLEXBOX
+.flexbox() {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+.flexbox-justify-content(@type) {
+    -webkit-box-justify-content: @type;
+    -moz-box-justify-content: @type;
+    -webkit-justify-content: @type;
+    -ms-justify-content: @type;
+    justify-content: @type;
+}
+.flexbox-align-items(@type){
+    -webkit-box-align-items: @type;
+    -moz-box-align-items: @type;
+    -webkit-align-items: @type;
+    -ms-align-items: @type;
+    align-items: @type;
+}
+.flexbox-flex-wrap(@type){
+    -webkit-box-flex-wrap: @type;
+    -moz-box-flex-wrap: @type;
+    -webkit-flex-wrap: @type;
+    -ms-flex-wrap: @type;
+    flex-wrap: @type;
+}
+// *********************************************************************************************************************
+// BOX-SHADOW
+.box-shadow(@string){
+    -webkit-box-shadow: @string;
+    -moz-box-shadow: @string;
+    box-shadow: @string;
+}
+// *********************************************************************************************************************
+// BOX-SIZING
+.box-sizing (@type: border-box) {
+    -webkit-box-sizing: @type;
+    -moz-box-sizing:    @type;
+    box-sizing:         @type;
+}
+// *********************************************************************************************************************
+// TRANSITION
+.transition(@string){
+    -webkit-transition: @string;
+    -moz-transition: @string;
+    -ms-transition: @string;
+    -o-transition: @string;
+    transition: @string;
+}
+
+.opacity (@opacity: 0.5) {
+	-webkit-opacity: 	@opacity;
+	-moz-opacity: 		@opacity;
+	opacity: 		@opacity;
+}
+
+

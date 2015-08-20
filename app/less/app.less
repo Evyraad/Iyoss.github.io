@@ -1,0 +1,49 @@
+@import "mixins.less";
+
+body{
+    background: url(png/greyzz.png) repeat;
+    color: darken(#F6F6F6, 70%) !important;
+}
+.container{
+    max-width: 700px; 
+}
+.container__tasks-list {
+    & .tasks-lis__one-task{
+        background-color: rgba(255, 255, 255, 0.69);
+        padding: 20px;
+        margin: 20px;
+        .box-shadow(1px 1px 3px rgba(0, 0, 0, 0.1));
+        & {
+            .one-task__header-task, .one-task__body-task, .one-task__payment, .one-task__time, .one-task__amount{
+                margin-bottom: 20px;
+            }
+        }
+        & .one-task__payment .payment__input-group{
+            @media(min-width: 600px){
+                width: 30%;
+            }
+        }
+        & .one-task__time{
+            font-size: 20px;
+        }
+        & .one-task__groop-button{
+            float: right;
+            margin: 30px 0 10px;
+            @media(max-width: 600px){
+                text-align: right;
+                float: none;
+                margin-top: 0;
+            }
+        }
+        & .one-task__amount{
+            font-size: 16px;
+            & .amoun__text_complete{
+                border-bottom: 2px solid;
+                color: #5cb85c;
+            }
+        }
+    }
+}
+.container__add-task{
+    margin-left: 25px;
+}
