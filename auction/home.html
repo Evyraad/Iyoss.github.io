@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Auction</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    </head>
+    <body>
+        <header class="container-fluid container-fluid--header home-header">
+            <div class="container--header">
+                <figure class="header--logo col-1 text-left">
+                    <p class="logo--img"><img src="images/logo.png" alt="logo"></p>
+                    <figcaption class="logo--label"><h1 class="logo--label--h1">Antiqure book club</h1></figcaption>
+                </figure>
+                <div class="header--search">
+                    <div class="input-group form-group">
+                        <span class="input-group-addon glyphicon glyphicon-search header--search--icon"></span>
+                        <input id="search-form" type="search" class="form-control header--search--input" placeholder="">
+                    </div>
+                    <ul id="search-menu" data-show="false" class="search--menu list-unstyled hide-elem">
+                        <li class="search--menu--elem" data-value="по сайту"><label class="elem--label" for="search-form">по сайту</label></li>
+                        <li class="search--menu--elem" data-value="по лотам"><label class="elem--label" for="search-form">по лотам</label></li>
+                        <li class="search--menu--elem" data-value="по каталогу"><label class="elem--label" for="search-form">по каталогу</label></li>
+                    </ul>
+                </div>
+                <nav class="header--nav col-2">
+                    <ul class="nav--list list-inline text-center">
+                        <li class="list--elem"><a class="elem--a" href="#">новости</a></li>
+                        <li class="list--elem">
+                            <a class="elem--a" href="calendar.html">календарь</a>
+                            <ul class="elem--child list-unstyled text-center">
+                                <li class="list--elem list--elem__child"><a class="elem--a" href="#">Общие положения и правила</a></li>
+                                <li class="list--elem list--elem__child"><a class="elem--a" href="#">Правила участия в аукционах</a></li>
+                            </ul>
+                        </li>
+                        <li class="list--elem"><a class="elem--a" href="about-us-unregistered-user.html">о нас</a></li>
+                        <li class="list--elem"><a class="elem--a" href="catalog.html">каталог</a></li>
+                        <li class="list--elem">
+                            <a class="elem--a" href="#">правила</a>
+                            <ul class="elem--child list-unstyled text-center">
+                                <li class="list--elem list--elem__child"><a class="elem--a" href="#">Общие положения и правила</a></li>
+                                <li class="list--elem list--elem__child"><a class="elem--a" href="#">Правила участия в аукционах</a></li>
+                            </ul>
+                        </li>
+                        <li class="list--elem"><a class="elem--a" href="contacts.html">контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header--auth col-1">
+                    <ul class="auth-list list-inline text-right">
+                        <li id="sineIn" class="auth-list--sineIn">
+                            <a class="elem--a" href="#">Вход</a>
+                        </li>
+                        <li class="auth-list--registration"><a class="elem--a" href="registration.html">Регистрация</a></li>
+                    </ul>
+                    <form class="form--sineIn site-form hide-elem" role="form">
+                        <div class="form-group">
+                            <label for="name-user" class="sr-only">name-user</label>
+                            <input type="email" class="form-control" id="name-user" placeholder="e-mail" maxlength="40">
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="sr-only">password</label>
+                            <input type="text" class="form-control" id="password" placeholder="Пароль">
+                        </div>
+                        <p id="password-recovery" class="text-right forgot-password"><a href="#" class="elem--a">Забыли пароль?</a></p>
+                        <div class="btn-group">
+                            <div class="btn-group--btn-sineIn">
+                                <button type="submit" class="btn btn-sineIn">Войти</button>
+                            </div>
+                            <div class="btn-group--btn-registration">
+                                <a class="btn btn-registration btn-submit" role="button" href="registration.html">Пройти регистрацию</a>
+                            </div>
+                        </div>
+                    </form>
+                    <form class="form--pass-recoverty site-form hide-elem" role="form">
+                        <h6 class="text-right head-form--elem-h">Восстановление пароля</h6>
+                        <div class="form-group">
+                            <label for="e-mail" class="sr-only">e-mail</label>
+                            <input type="email" class="form-control" id="e-mail" placeholder="e-mail" maxlength="40">
+                            <p class="help-block form-help-block">На Ваш E-mail придет подтверждение о смене пароля</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="new-pass" class="sr-only">new-pass</label>
+                            <input type="text" class="form-control" id="new-pass" placeholder="Новый пароль*">
+                        </div>
+                        <div class="form-group">
+                            <label for="new-pass-two" class="sr-only">new-pass-two</label>
+                            <input type="text" class="form-control" id="new-pass-two" placeholder="Подтвердить новый пароль*">
+                        </div>
+                        <div class="form-capcha">
+                            <div class="form-group form-group--capcha">
+                                <label for="capcha" class="sr-only">new-pass-two</label>
+                                <input type="text" class="form-control" id="capcha" maxlength="5">
+                            </div>
+                            <div class="capcha"></div>
+                            <p class="update-capcha"><a href="#" class="elem--a" aria-hidden="true"></a></p>
+                        </div>
+                        <p class="help-block form-help-block margin-bottom">Впишите в это окно символы из окошка справа</p>
+                        <button type="submit" class="btn btn-submit">Изменить пароль</button>
+                    </form>
+                </div>
+            </div>
+        </header>
+        <div class="container-fluid container-fluid--content">
+            <div class="gold-line"></div>
+            <div id="auctionCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div id="slide-1" class="item active">
+                        <img class="img-carousel" src="images/carousel/big-banner/slide_1.jpg" alt="slide_1">
+                        <div class="carousel-caption carousel-caption--auction hide-elem">
+                            <figure class="caption">
+                                <p class="caption--img">
+                                    <img alt="book" src="images/carousel/small-banner/books_small_1.gif">
+                                </p>
+
+                                <div class="gold-line"></div>
+                                <figcaption class="caption--label text-left">
+                                    <span class="label--elem-span">
+                                        Antigue book club представляет 
+                                        эксклюзивные издания <br>
+                                        конца ХIХ века
+                                    </span>
+                                    <span class="label--elem-span auction-date">
+                                        АУКЦИОН ХХ.ХХ.2015
+                                    </span>
+                                    <span class="label--elem-span receiving-lots">
+                                        Прием лотов
+                                    </span>
+                                    <span class="label--elem-span receiving-lots-date">
+                                        с XX.XX.2015 по XX.XX.2015
+                                    </span>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div id="slide-2" class="item">
+                        <img class="img-carousel" src="images/carousel/big-banner/slide_1.jpg" alt="slide_2">
+                        <div class="carousel-caption carousel-caption--auction hide-elem">
+                            <figure class="caption">
+                                <p class="caption--img">
+                                    <img alt="book" src="images/carousel/small-banner/books_small_2.gif">
+                                </p>
+
+                                <div class="gold-line"></div>
+                                <figcaption class="caption--label text-left">
+                                    <span class="label--elem-span">
+                                        Antigue book club представляет 
+                                        эксклюзивные издания <br>
+                                        конца ХIХ века
+                                    </span>
+                                    <span class="label--elem-span auction-date">
+                                        АУКЦИОН ХХ.ХХ.2015
+                                    </span>
+                                    <span class="label--elem-span receiving-lots">
+                                        Прием лотов
+                                    </span>
+                                    <span class="label--elem-span receiving-lots-date">
+                                        с XX.XX.2015 по XX.XX.2015
+                                    </span>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- Controls -->
+                <div class="carousel__controls text-center">
+                    <a class="controls__arrow controls__arrow--left" href="#auctionCarousel" data-slide="prev"></a>
+                    <a class="controls__arrow controls__arrow--center"></a>
+                    <a class="controls__arrow controls__arrow--right" href="#auctionCarousel" data-slide="next"></a>
+                </div>
+            </div>
+        </div>
+        <script src="js/datetimepicker/moment.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+        <script src="js/jquery.fancybox.pack.js"></script>
+        <script src="js/proj.js"></script>
+    </body>
+</html>

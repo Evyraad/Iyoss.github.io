@@ -1,0 +1,91 @@
+.registration{
+    min-width: 1125px;
+    padding: 0;
+    height: 100vh;
+    .flexbox();
+    .align-items(center);
+    .form-registration{
+        width: 1125px;
+        margin: auto;
+        .form-inline{
+            .flexbox();
+        }
+        .form-col-left{
+            padding-left: 0;
+        }
+        .form-col-right{
+            padding-right: 0;
+        }
+        .head-form--elem-h{
+            color: @line-color;
+            padding-bottom: 20px;
+        }
+        .form-group--reg-email, .form-group--reg-region{
+            width: 356px;
+            & > .form-control{
+                width: 100%;
+            }
+        }
+        .form-group--sex{
+            width: 84px;
+            margin: 0 0 15px 0;
+        }
+        .sex--label, .conditions--label{
+            .flexbox();
+            .align-items(center);
+            .justify-content(flex-end);
+            font-size: 16px;
+            color: @line-color;
+        }
+        .conditions--label{
+            padding-left: 0;
+            .label--elem-span{
+                font-size: 12px;
+                text-align: right;
+                line-height: 15px;
+            }
+        }
+        .form-group--reg-index{
+            margin-left: 14px;
+            width: 154px;
+            .form-control{
+                font-size: 16px;
+                text-align: center;
+                border-left: 0;
+            }
+            .input-group-addon{
+                color: @line-color;
+                background: transparent;
+                border-right: 0;
+                border-color: @line-color;
+            }
+        }
+        .form-group--reg-pass{
+            width: 285px;
+            & > .form-control{
+                width: 100%;
+            }
+        }
+        .form-group--conditions{
+            width: 239px;
+            padding-left: 15px;
+            margin: 0 0 15px 0;
+        }
+        .btn-submit{
+            width: 220px;
+            height: 55px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+        .form-help-block{
+            margin-bottom: 0;
+            display: block;
+        }
+    }
+    .update-capcha{
+        margin-left: 5px;
+    }
+}
+
+

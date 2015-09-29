@@ -1,0 +1,236 @@
+.catalog-header{
+    margin-bottom: 45px;
+}
+
+.header--nav__catalog{
+    padding-bottom: 22px;
+    background-color: @body-bg;
+    .nav--list{
+        margin: 0;
+        .list--elem:nth-child(n){
+            text-align: center;
+        }
+    }
+}
+
+#auctionCatalogPDF{
+    color: @body-bg;
+}
+
+.catalog--book-focus{
+    border: 3px solid @color-catalog-icon;
+    padding: 14px 21px !important;
+}
+
+.container--content__catalog{
+    .flexbox();
+    margin-bottom: 10px;
+    .col-2{
+        background-color: #dadada;
+        margin-left: 10px;
+    }
+}
+
+.content--catalog{
+    padding: 30px 55px;
+
+    .catalog--header{
+        margin-bottom: 35px;
+        .icon-list{
+            float: left;
+            .list--elem:nth-child(n){
+                cursor: pointer;
+                font-size: 20px;
+                color: @color-catalog-icon;    
+            }
+            .list--elem:last-child{
+                margin-left: 3px;
+            }
+            .list--elem__active{
+                color: @body-bg !important;
+            }
+        }
+    }
+
+    .catalog--one-book{
+        color: @body-bg;
+        position: relative;
+        .book--lot{
+            font-weight: bold;
+        }
+        .book--info{
+            .info-img{
+                box-sizing: border-box;
+                background-color: #fff;
+                padding: 17px 24px;
+                display: inline-block;
+                width: 118px;
+                height: 134px;
+                & > img{
+                    width: 70px;
+                    height: 100px;
+                }
+            }
+            .info-title{
+                [class^="book"]{
+                    display: block;
+                }
+                .elem--a{
+                    color: @body-bg;
+                }
+            }
+        }
+        .book--price{
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 2px 10px;
+            display: inline-block;
+            border: 1px solid;
+        }
+    }
+
+    .catalog--body__tile{
+        .flexbox();
+        .flex-wrap(wrap);
+        .catalog--one-book{
+            margin-right: 55px;
+            text-align: center;
+            max-width: 118px;
+            &:nth-child(4n){
+                margin-right: 0;
+            }
+            .book--lot{
+                font-size: 12pt;
+                margin: 0 0 5px 0;
+            }
+            .book--info{
+                margin-bottom: 8px;
+                .info-img{
+                    margin-bottom: 5px;
+                }
+                .info-title{
+                    line-height: 16px;
+                    .book--estimate, 
+                    .book--circulation,
+                    .book--press,
+                    .enter{
+                        display: none;
+                    }
+                    .book--read-more{
+                        font-size: 8pt;
+                        margin-top: 2px;
+                    }
+                }
+            }
+            .book--price{
+                font-size: 13px;
+                margin: 0 0 25px 0;
+            }
+        }
+    }   
+
+    .catalog--body__list{
+        .catalog--one-book{
+            margin-bottom: 38px;
+            .book--lot{
+                position: absolute;
+                top: 0;
+                left: 150px;
+                margin: 0;
+            }
+            .book--info{
+                position: relative;
+                .info-img{
+                    margin: 0;
+                }
+                .info-title{
+                    position: absolute;
+                    top: 24px;
+                    line-height: 18px;
+                    left: 150px;
+                    .book--autor,
+                    .book--title,
+                    .book--circulation,
+                    .book--press,
+                    .book--publish-year{
+                        display: inline-block;
+                    }
+                }
+            }
+            .book--price{
+                position: absolute;
+                bottom: 5px;
+                left: 150px;
+                margin: 0;
+                font-size: 16px;
+                text-transform: none;
+            }
+        }
+    }
+}
+
+.content--preview{
+    font: italic 14px "PalatinoLinotypeItalic";
+    padding: 25px 70px 0 0;
+    height: 100%;
+    width: 440px;
+    .preview--header{
+        .auction-name{
+            font-size: 21px;
+            margin: 15px 0 0;
+            text-shadow: 0 0 1px #fff;
+        }
+        .auction-date{
+            font-family: "PTSansNarrowRegular";
+            font-style: normal;
+            margin: 0;
+        }
+    }
+
+    .book--info{
+        margin-top: 50px;
+        .info-img{
+            padding: 55px;
+            background-color: @line-color;
+            margin: 0 0 30px 0;
+            width: 370px;
+            height: 370px;
+        }
+        .info-title{
+            [class^="book"]{
+                display: block;
+                font-size: 21px;
+                text-shadow: 0 0 1px #fff;
+                line-height: 29px;
+            }
+            .elem--a{
+                color: @line-color;
+            }
+            .book--read-more{
+                font-size: 14px;
+                font-family: "PTSansNarrowRegular";
+                font-style: normal;
+            }
+        }
+    }
+
+    .book--price{
+        color: @line-color;
+        margin: 20px 0 74px 0;
+        text-transform: uppercase;
+        padding: 5px 10px;
+        display: inline-block;
+        border: 1px solid @line-color;
+        font: bold 18px "PTSansNarrowRegular";
+
+    }
+
+    .gold-line{
+        position: absolute;
+        bottom: 30px;
+        left: 0;
+        width: 450px;
+        height: 16px;
+    }
+
+}

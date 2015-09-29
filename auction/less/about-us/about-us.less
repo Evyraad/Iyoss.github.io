@@ -1,0 +1,102 @@
+.container--content__about-us{
+    .flexbox();
+    margin-bottom: 60px;
+    .about-us--description{
+        padding: 20px 40px 0 0;
+        margin: 0 0 0 30px;
+        border-top: 1px solid @line-color;
+        border-right: 1px solid @line-color;
+        .description-header{
+            margin: 0;
+            font-size: 16px;
+            .label{
+                font: italic 20px "PalatinoLinotypeItalic";
+            }
+        }
+
+        .description-body{
+            background-color: @description-about-as;
+            margin: 25px 0 0 -30px;
+            padding: 20px 25px 40px;
+            .body--img{
+                margin-bottom: 35px;
+                & > img {
+                    opacity: 0.9;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .body--text{
+                padding: 0 5px;
+                text-align: justify;
+                font-size: 15px;
+                line-height: 18px;
+            }
+        }
+    }
+    
+    .form--sineIn{
+        top: auto;
+        bottom: 0;
+    }
+    .form--pass-recoverty{
+        top: auto;
+        bottom: 0;
+    }
+    .col-2{
+        background: transparent @url-bg-about-us bottom center no-repeat;
+    }
+}
+
+.content--about-us{
+    margin-left: 10px;
+    padding: 0 20px 0 80px; 
+    height: 100%;
+    .header--logo{
+        border: none;
+        height: auto;
+        padding-top: 25px;
+        margin-bottom: 20px;
+    }
+
+    .content-body{
+        position: relative;
+        .body-col{
+            position: relative;
+            text-align: justify;
+            font-size: 16px;
+            line-height: 18px;
+            &:first-child{
+                padding-right: 20px;
+            }
+            &:nth-child(2){
+                padding: 0 0 58px 20px;
+            }
+        }
+    }
+}
+
+.text__italic{
+    font-family: "PalatinoLinotypeItalic";
+    font-style: italic;
+}
+
+.text-footer{
+    margin: 20px 0 0;
+    font-size: 20px;
+}
+
+.feedback{
+    max-width: 300px;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    .feedback--text{
+        font-size: 15px;
+        line-height: 24px;
+        text-transform: uppercase;
+    }
+    .feedback--contacts{
+        font: italic 19px/23px "PalatinoLinotypeItalic";
+    }
+}

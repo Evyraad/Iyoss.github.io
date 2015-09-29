@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Auction</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    </head>
+    <body>
+        <header class="container-fluid container-fluid--header catalog-header">
+            <div class="container--header">
+                <div class="more-info">
+                    <article class="more-info--news more-info--elem">
+                        <h4 class="elem--h">новости</h4>
+                        <p class="elem--p">Предстоящих/прошедших торгов</p>
+                    </article>
+                    <article class="more-info--elem">
+                        <h4 class="elem--h">Аукцион<br/>ХХ.ХХ.2015</h4>
+                        <p class="elem--p">Книги с автографами и авторскими рисунками</p>
+                    </article>
+                    <article class="more-info--elem">
+                        <h4 class="elem--h">Аукцион<br/>ХХ.ХХ.2015</h4>
+                        <p class="elem--p">Эксклюзивные издания конца XIX века</p>
+                    </article>
+                </div>
+            </div>
+        </header>
+        <div class="container-fluid container-fluid--content">
+            <div class="container--content container--content__catalog">
+                <div class="col-1">
+                    <section class="content--preview text-center">
+                        <div id="sticky-sidebar">
+                            <hgroup class="preview--header">
+                                <h5 class="auction-date">Аукцион №10/18 августа 2015 года</h5>
+                                <h3 class="auction-name">Эксклюзивные издания конца XIX века</h3>
+                            </hgroup>
+                            <figure class="book--info">
+                                <p class="info-img book--read-more">
+                                    <a class="elem--a" href="#"><img alt="book" src="images/catalog/book_1.png" width="220" height="265"></a>
+                                </p>
+                                <figcaption class="info-title">
+                                    <span class="book--autor">Автор</span>
+                                    <span class="book--title">Название кники</span>
+                                    <span class="book--publish-year">год издания</span>
+                                    <span class="book--read-more"><a class="elem--a" href="#">Подробнее &#62;</a></span>
+                                </figcaption>
+                            </figure>
+                            <p class="book--price">XX XXX руб.</p>
+                        </div>
+                        <div class="gold-line"></div>
+                    </section>
+                </div>
+                <div class="col-2">
+                    <nav class="header--nav header--nav__catalog">
+                        <ul class="nav--list list-inline text-left">
+                            <li class="list--elem"><a class="elem--a" href="home.html">главная</a></li>
+                            <li class="list--elem"><a class="elem--a" href="#">новости</a></li>
+                            <li class="list--elem">
+                                <a class="elem--a" href="calendar.html">календарь</a>
+                                <ul class="elem--child list-unstyled text-center">
+                                    <li class="list--elem list--elem__child"><a class="elem--a" href="#">Общие положения и правила</a></li>
+                                    <li class="list--elem list--elem__child"><a class="elem--a" href="#">Правила участия в аукционах</a></li>
+                                </ul>
+                            </li>
+                            <li class="list--elem"><a class="elem--a" href="about-us-unregistered-user.html">о нас</a></li>
+                            <li class="list--elem"><a class="elem--a" href="catalog.html">каталог</a></li>
+                            <li class="list--elem">
+                                <a class="elem--a" href="#">правила</a>
+                                <ul class="elem--child list-unstyled text-center">
+                                    <li class="list--elem list--elem__child"><a class="elem--a" href="#">Общие положения и правила</a></li>
+                                    <li class="list--elem list--elem__child"><a class="elem--a" href="#">Правила участия в аукционах</a></li>
+                                </ul>
+                            </li>
+                            <li class="list--elem"><a class="elem--a" href="contacts.html">контакты</a></li>
+                        </ul>
+                    </nav>
+                    <section class="content--catalog">
+                        <div class="catalog--header text-right">
+                            <p class="icon-list">
+                                <span class="glyphicon glyphicon-th list--elem list--elem__active"></span>
+                                <span class="glyphicon glyphicon-th-list list--elem"></span>
+                            </p>
+                            <p><a id="auctionCatalogPDF" href="#">скачать pdf</a></p>
+                        </div>
+                        <div class="catalog--body catalog--body__tile">
+                            <article class="catalog--one-book">
+                                <h4 class="book--lot">Лот 1</h4>
+                                <figure class="book--info">
+                                    <p class="info-img">
+                                        <img  width="70" height="100" alt="book" src="images/catalog/book_1.png">
+                                    </p>
+                                    <figcaption class="info-title">
+                                        <span class="book--autor">Оноре де Бальзак</span>
+                                        <span class="book--title">Отец Горио</span><br class="enter"/>
+                                        <span class="book--circulation">Тираж</span>
+                                        <span class="book--press">Город: Франция</span>
+                                        <span class="book--publish-year">1835 г.</span>
+                                        <span class="book--read-more"><a class="elem--a" href="one-lot.html">Подробнее &#62;</a></span>
+                                        <span class="book--estimate">Эстимейт: 20 000 - 200 000 руб.</span>
+                                    </figcaption>
+                                </figure>
+                                <p class="book--price">200 000 руб.</p>
+                            </article>
+                            <article class="catalog--one-book">
+                                <h4 class="book--lot">Лот 1</h4>
+                                <figure class="book--info">
+                                    <p class="info-img">
+                                        <img  width="70" height="100" alt="book" src="images/catalog/book_2.png">
+                                    </p>
+                                    <figcaption class="info-title">
+                                        <span class="book--autor">Николай Васильевич Гоголь</span>
+                                        <span class="book--title">Мёртвые души</span><br class="enter"/>
+                                        <span class="book--circulation">Тираж</span>
+                                        <span class="book--press">Город: Российская Империя</span>
+                                        <span class="book--publish-year">1842</span>
+                                        <span class="book--read-more"><a class="elem--a" href="#">Подробнее &#62;</a></span>
+                                        <span class="book--estimate">Эстимейт: 30 000 - 33 000 руб.</span>
+                                    </figcaption>
+                                </figure>
+                                <p class="book--price">30 000 руб.</p>
+                            </article>
+                            <article class="catalog--one-book">
+                                <h4 class="book--lot">Лот 1</h4>
+                                <figure class="book--info">
+                                    <p class="info-img">
+                                        <img  width="70" height="100" alt="book" src="images/catalog/book_1.png">
+                                    </p>
+                                    <figcaption class="info-title">
+                                        <span class="book--autor">Пауль Целан</span>
+                                        <span class="book--title">Стихотворения</span><br class="enter"/>
+                                        <span class="book--circulation">Тираж</span>
+                                        <span class="book--press">Город: Румыния / Франция</span>
+                                        <span class="book--publish-year">1952</span>
+                                        <span class="book--read-more"><a class="elem--a" href="#">Подробнее &#62;</a></span>
+                                        <span class="book--estimate">Эстимейт: 50 000 - 85 000 руб.</span>
+                                    </figcaption>
+                                </figure>
+                                <p class="book--price">XX XXX руб.</p>
+                            </article>
+                            <article class="catalog--one-book">
+                                <h4 class="book--lot">Лот 1</h4>
+                                <figure class="book--info">
+                                    <p class="info-img">
+                                        <img  width="70" height="100" alt="book" src="images/catalog/book_1.png">
+                                    </p>
+                                    <figcaption class="info-title">
+                                        <span class="book--autor">Автор</span>
+                                        <span class="book--title">Название кники</span><br class="enter"/>
+                                        <span class="book--circulation">Тираж</span>
+                                        <span class="book--press">Город: Название типографии</span>
+                                        <span class="book--publish-year">год издания</span>
+                                        <span class="book--read-more"><a class="elem--a" href="#">Подробнее &#62;</a></span>
+                                        <span class="book--estimate">Эстимейт: ХХ ХХХ - ХХ ХХХ руб.</span>
+                                    </figcaption>
+                                </figure>
+                                <p class="book--price">XX XXX руб.</p>
+                            </article>
+                            <article class="catalog--one-book">
+                                <h4 class="book--lot">Лот 1</h4>
+                                <figure class="book--info">
+                                    <p class="info-img">
+                                        <img  width="70" height="100" alt="book" src="images/catalog/book_1.png">
+                                    </p>
+                                    <figcaption class="info-title">
+                                        <span class="book--autor">Автор</span>
+                                        <span class="book--title">Название кники</span><br class="enter"/>
+                                        <span class="book--circulation">Тираж</span>
+                                        <span class="book--press">Город: Название типографии</span>
+                                        <span class="book--publish-year">год издания</span>
+                                        <span class="book--read-more"><a class="elem--a" href="#">Подробнее &#62;</a></span>
+                                        <span class="book--estimate">Эстимейт: ХХ ХХХ - ХХ ХХХ руб.</span>
+                                    </figcaption>
+                                </figure>
+                                <p class="book--price">XX XXX руб.</p>
+                            </article>
+                            <article class="catalog--one-book">
+                                <h4 class="book--lot">Лот 1</h4>
+                                <figure class="book--info">
+                                    <p class="info-img">
+                                        <img  width="70" height="100" alt="book" src="images/catalog/book_1.png">
+                                    </p>
+                                    <figcaption class="info-title">
+                                        <span class="book--autor">Автор</span>
+                                        <span class="book--title">Название кники</span><br class="enter"/>
+                                        <span class="book--circulation">Тираж</span>
+                                        <span class="book--press">Город: Название типографии</span>
+                                        <span class="book--publish-year">год издания</span>
+                                        <span class="book--read-more"><a class="elem--a" href="#">Подробнее &#62;</a></span>
+                                        <span class="book--estimate">Эстимейт: ХХ ХХХ - ХХ ХХХ руб.</span>
+                                    </figcaption>
+                                </figure>
+                                <p class="book--price">XX XXX руб.</p>
+                            </article>
+                            <article class="catalog--one-book">
+                                <h4 class="book--lot">Лот 1</h4>
+                                <figure class="book--info">
+                                    <p class="info-img">
+                                        <img  width="70" height="100" alt="book" src="images/catalog/book_1.png">
+                                    </p>
+                                    <figcaption class="info-title">
+                                        <span class="book--autor">Автор</span>
+                                        <span class="book--title">Название кники</span><br class="enter"/>
+                                        <span class="book--circulation">Тираж</span>
+                                        <span class="book--press">Город: Название типографии</span>
+                                        <span class="book--publish-year">год издания</span>
+                                        <span class="book--read-more"><a class="elem--a" href="#">Подробнее &#62;</a></span>
+                                        <span class="book--estimate">Эстимейт: ХХ ХХХ - ХХ ХХХ руб.</span>
+                                    </figcaption>
+                                </figure>
+                                <p class="book--price">XX XXX руб.</p>
+                            </article>
+                            <article class="catalog--one-book">
+                                <h4 class="book--lot">Лот 1</h4>
+                                <figure class="book--info">
+                                    <p class="info-img">
+                                        <img  width="70" height="100" alt="book" src="images/catalog/book_1.png">
+                                    </p>
+                                    <figcaption class="info-title">
+                                        <span class="book--autor">Автор</span>
+                                        <span class="book--title">Название кники</span><br class="enter"/>
+                                        <span class="book--circulation">Тираж</span>
+                                        <span class="book--press">Город: Название типографии</span>
+                                        <span class="book--publish-year">год издания</span>
+                                        <span class="book--read-more"><a class="elem--a" href="#">Подробнее &#62;</a></span>
+                                        <span class="book--estimate">Эстимейт: ХХ ХХХ - ХХ ХХХ руб.</span>
+                                    </figcaption>
+                                </figure>
+                                <p class="book--price">XX XXX руб.</p>
+                            </article>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/proj.js"></script>
+    </body>
+</html>

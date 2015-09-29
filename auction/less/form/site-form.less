@@ -1,0 +1,192 @@
+.site-form{
+    background-color: rgba(0,0,0,0.85);
+    padding: 23px;
+    .form-group{
+        margin-bottom: 15px;
+        .form-control{
+            background-color: transparent;
+            border: 1px solid @line-color;
+            border-radius: 0;
+            .box-shadow(none);
+            color: @line-color;
+            height: 40px;
+            padding: 6px 15px;
+        }
+    }
+
+    .btn-submit{
+        background-color: @button-submit;
+        color: @body-bg;
+        border-radius: 0;
+        height: 40px;
+        &:hover{
+            color: @body-bg;
+        }
+        &:active{
+            .box-shadow(0 3px 7px rgba(0, 0, 0, 0.235) inset);
+        }
+    }
+
+    .update-capcha{
+        display: inline-block;
+        font-size: 20px;
+        /*        color: @line-color;*/
+        margin: 0;
+        padding: 7px 0;
+        & > .elem--a{
+            text-decoration: none;
+            display: block;
+            background: transparent @url-arrow-capcha bottom no-repeat;
+            width: 20px;
+            height: 25px;
+        }
+    }
+
+    .head-form--elem-h{
+        margin-top: 0;
+        font-size: 13px;
+    }
+
+    .form-help-block{
+        color: @line-color;
+        display: inline-block;
+    }
+
+    textarea{
+        background-color: transparent;
+        border: 1px solid @line-color;
+        border-radius: 0;
+        .box-shadow(none);
+        color: @line-color;
+        height: 200px;
+        padding: 10px 15px;
+        resize: none;
+        margin-bottom: 20px;
+        &:focus{
+            border-color: @line-color;
+        }
+    }
+
+    .form-capcha{
+        height: 40px;
+        .form-group--capcha{
+            margin: 0 5px 0 0;
+            float: left;
+            display: inline-block;
+            .form-control{
+                width: 112px;
+            }
+        }
+        .capcha{
+            width: 112px;
+            height: 40px;
+            display: inline-block;
+            float: left;
+            background-color: transparent;
+            border: 1px solid @line-color;
+            margin: 0 5px 0 0;
+        }
+    }
+    input[type="radio"],input[type="checkbox"]{
+        display:none;
+    }
+
+    input[type="radio"] + label .radio-form, 
+    input[type="checkbox"] + label .radio-form{
+        background: transparent;
+        height: 40px;
+        width: 40px;
+        display:inline-block;
+        padding: 0;
+        margin-left: 13px;
+        border: 1px solid @line-color;
+        .flex-shrink(0);
+    }
+
+    input[type="radio"]:checked + label .radio-form,
+        input[type="checkbox"]:checked + label .radio-form{
+        background: @url-tick-form center no-repeat;
+        height: 40px;
+        width: 40px;
+        display:inline-block;
+        padding: 0;
+        margin-left: 13px;
+        border: 1px solid @line-color;
+        .flex-shrink(0);
+    }
+}
+
+.form-group, .form-control, textarea{
+    .placeholder(@line-color, inherit);
+}
+.form-control::-moz-placeholder{
+    color: #fff;
+}
+.form-control:-ms-input-placeholder {
+    color: #fff;
+}
+.form-control::-webkit-input-placeholder {
+    color: #fff;
+}
+
+
+.site-form__light{
+    background-color: transparent;
+    color: @body-bg;
+    .form-group{
+        margin-bottom: 12px;
+        .form-control{
+            border-color: @body-bg;
+            color: @body-bg;
+            &::-moz-placeholder{
+                color: #000;
+            }
+            &::-ms-input-placeholder{
+                color: #000;
+            }
+            &::-webkit-input-placeholder{
+                color: #000;
+            }
+        }
+    }
+    .form-control{
+        border-color: @body-bg;
+        color: @body-bg;
+        &::-moz-placeholder{
+            color: #000;
+        }
+        &::-ms-input-placeholder{
+            color: #000;
+        }
+        &::-webkit-input-placeholder{
+            color: #000;
+        }
+        textarea{
+            .placeholder(#000, inherit);
+        }
+    }
+    .update-capcha{
+        margin-left: 10px;
+        .elem--a{
+            background-position: center top;
+        }
+    }
+    .form-help-block{
+        color: @body-bg;
+    }
+    textarea{
+        &:focus{
+            box-shadow: none;
+            border-color: @body-bg;
+        }
+    }
+    input[type="radio"] + label .radio-form, 
+    input[type="checkbox"] + label .radio-form{
+        border-color: #000;
+    }
+    input[type="radio"]:checked + label .radio-form,
+        input[type="checkbox"]:checked + label .radio-form{
+        background: @url-tick-form-light center no-repeat;
+        border-color: #000;
+    }
+}

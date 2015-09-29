@@ -1,0 +1,51 @@
+.form--sineIn{
+    position: absolute;
+    width: 300px;
+    height: 215px;
+    top: 30px;
+    right: 0;
+    z-index: 1;
+    .form-group{
+        margin-bottom: 10px;
+    }
+    .forgot-password{
+        font-size: 13px;
+        .elem--a{
+            text-decoration: underline;
+            color: @line-color;
+            &:hover, &:focus{
+                color: @line-color;
+            }
+        }
+    }
+    .btn-group{
+        .btn-group--btn-sineIn{
+            width: 77px;
+            display: inline-block;
+            padding: 0;
+            .btn-sineIn{
+                background-color: transparent;
+                border: 1px solid #fff;
+                border-radius: 0;
+                height: 40px;
+                width: 77px;
+                &:hover, &:focus{
+                    color: @line-color;
+                }
+                &:active{
+                    .box-shadow(0 3px 10px rgba(255,255,255,0.5) inset);
+                }
+            }
+        }
+        .btn-group--btn-registration{
+            display: inline-block;
+            .btn-registration{
+                width: 160px;
+                margin-left: 13px;
+                padding-bottom: 9px;
+                padding-top: 9px;
+            }
+        }
+    }
+}
+

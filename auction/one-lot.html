@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Auction</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    </head>
+    <body>
+        <header class="container-fluid container-fluid--header catalog-header">
+            <div class="container--header">
+                <div class="more-info">
+                    <article class="more-info--news more-info--elem">
+                        <h4 class="elem--h">новости</h4>
+                        <p class="elem--p">Предстоящих/прошедших торгов</p>
+                    </article>
+                    <article class="more-info--elem">
+                        <h4 class="elem--h">Аукцион<br/>ХХ.ХХ.2015</h4>
+                        <p class="elem--p">Книги с автографами и авторскими рисунками</p>
+                    </article>
+                    <article class="more-info--elem">
+                        <h4 class="elem--h">Аукцион<br/>ХХ.ХХ.2015</h4>
+                        <p class="elem--p">Эксклюзивные издания конца XIX века</p>
+                    </article>
+                </div>
+            </div>
+        </header>
+        <div class="container-fluid container-fluid--content">
+            <div class="container--content container--content__catalog">
+                <div class="col-1">
+                    <section class="content--preview content--preview__lot text-center">
+                        <hgroup class="preview--header">
+                            <h3 class="auction-number">Аукцион №10</h3>
+                            <h5 class="auction-date">18 августа 2015 года</h5>
+                        </hgroup>
+                        <figure class="book--info">
+                            <p class="info-img">
+                                <a class="fancybox" rel="lot-1" href="images/catalog/book_1.png"><img alt="book" src="images/catalog/book_1.png" width="220" height="265"></a>
+                            </p>
+                            <figcaption class="info-title">
+                                <span class="book--autor">Автор</span>
+                                <span class="book--title">Название кники</span>
+                                <span class="book--publish-year">год издания</span>
+                            </figcaption>
+                        </figure>
+                        <div id="carousel-one-lot" class="carousel slide" data-ride="carousel-2">
+                            <div class="carousel__controls">
+                                <a class="controls__arrow controls__arrow--left" href="#carousel-one-lot" data-slide="prev"></a>
+                                <a class="controls__arrow controls__arrow--right" href="#carousel-one-lot" data-slide="next"></a>
+                            </div>
+                            <div class="gold-line"></div>
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="col-xs-6 wrapper-preview-img">
+                                        <a class="preview-img fancybox" rel="lot-1" href="images/catalog/lot/big_book_1.jpg" title="This is a test string">
+                                            <img src="images/catalog/lot/small_book_1.png" width="70" height="100" alt="book">
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-6 wrapper-preview-img">
+                                        <a class="preview-img fancybox" rel="lot-1" href="images/catalog/lot/big_book_2.jpg" title="This is a test string">
+                                            <img src="images/catalog/lot/small_book_2.png" width="70" height="100" alt="book">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-xs-6 wrapper-preview-img">
+                                        <a class="preview-img fancybox" rel="lot-1" href="images/catalog/lot/big_book_1.jpg" title="This is a test string">
+                                            <img src="images/catalog/lot/small_book_1.png" width="70" height="100" alt="book">
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-6 wrapper-preview-img">
+                                        <a class="preview-img fancybox" rel="lot-1" href="images/catalog/lot/big_book_2.jpg" title="This is a test string">
+                                            <img src="images/catalog/lot/small_book_2.png" width="70" height="100" alt="book">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-xs-6 wrapper-preview-img">
+                                        <a class="preview-img fancybox" rel="lot-1" href="images/catalog/lot/big_book_1.jpg" title="This is a test string">
+                                            <img src="images/catalog/lot/small_book_1.png" width="70" height="100" alt="book">
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-6 wrapper-preview-img">
+                                        <a class="preview-img fancybox" rel="lot-1" href="images/catalog/lot/big_book_2.jpg" title="This is a test string">
+                                            <img src="images/catalog/lot/small_book_2.png" width="70" height="100" alt="book">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-xs-6 wrapper-preview-img">
+                                        <a class="preview-img fancybox" rel="lot-1" href="images/catalog/lot/big_book_1.jpg" title="This is a test string">
+                                            <img src="images/catalog/lot/small_book_1.png" width="70" height="100" alt="book">
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-6 wrapper-preview-img">
+                                        <a class="preview-img fancybox" rel="lot-1" href="images/catalog/lot/big_book_2.jpg" title="This is a test string">
+                                            <img src="images/catalog/lot/small_book_2.png" width="70" height="100" alt="book">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-2">
+                    <nav class="header--nav header--nav__catalog">
+                        <ul class="nav--list list-inline text-left">
+                            <li class="list--elem"><a class="elem--a" href="home.html">главная</a></li>
+                            <li class="list--elem"><a class="elem--a" href="#">новости</a></li>
+                            <li class="list--elem">
+                                <a class="elem--a" href="calendar.html">календарь</a>
+                                <ul class="elem--child list-unstyled text-center">
+                                    <li class="list--elem list--elem__child"><a class="elem--a" href="#">Общие положения и правила</a></li>
+                                    <li class="list--elem list--elem__child"><a class="elem--a" href="#">Правила участия в аукционах</a></li>
+                                </ul>
+                            </li>
+                            <li class="list--elem"><a class="elem--a" href="about-us-unregistered-user.html">о нас</a></li>
+                            <li class="list--elem"><a class="elem--a" href="catalog.html">каталог</a></li>
+                            <li class="list--elem">
+                                <a class="elem--a" href="#">правила</a>
+                                <ul class="elem--child list-unstyled text-center">
+                                    <li class="list--elem list--elem__child"><a class="elem--a" href="#">Общие положения и правила</a></li>
+                                    <li class="list--elem list--elem__child"><a class="elem--a" href="#">Правила участия в аукционах</a></li>
+                                </ul>
+                            </li>
+                            <li class="list--elem"><a class="elem--a" href="contacts.html">контакты</a></li>
+                        </ul>
+                    </nav>
+                    <section class="content--catalog content--catalog__lot">
+                        <hgroup>
+                            <h1 class="auction-name">Эксклюзивные издания конца ХIХ века</h1>
+                            <h5 class="auction-date">Прием заочных ставок до 17: 00 17 августа 2015 года</h5>
+                        </hgroup>
+                        <section>
+                            <h2 class="book--lot">Лот 3</h2>
+                            <p class="book--info">1912 г., издательство: Тип-я М. А. Александрова, город: СПБ., страниц: XVI, 426 стр., илл., формат: увеличенный, </p>
+                            <p class="book-description">состояние: Очень хорошее, примечание: Яков Лазаревич Барсков (1863 - 1937), историк русской литературы XIXвека, 
+                                происходил из семьи старообрядцев, тайный советник и сенатор Российской Империи. Памятники, помещенные в этой книге 
+                                были найдены среди бумаг, пролежавших более ста лет в кладовых здания Петербургского университета, среди которых 
+                                наибольшего внимания заслуживают частные письма (боярыни Морозовой, патриарха Никона, протопопа Аввакума), 
+                                встречающиеся весьма редко. Доносы (изветы) попов и стрельцов, протоколы допросов, Житие инока Епифания и др. 
+                                Всего публикуется 69 памятников. Комплектный экземпляр со всеми 11-ю приложенными иллюстрациями. 
+                                Вышло как приложение к Запискам Академии Наук, обложки не предусмотрены. Книга редкая.</p>
+                            <p class="book--price">Эстимейт: ХХ ХХХ – ХХ ХХХ руб.</p>
+                        </section>
+                        <form class="site-form site-form__light form-horizontal" role="form">
+                            <div class="form-group text-right">
+                                <label class="elem--label col-xs-2" for="max-rate">Максимальная ставка</label>
+                                <div class="col-xs-10">
+                                    <input type="text" maxlength="40" id="max-rate" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group text-right">
+                                <label class="elem--label col-xs-2" for="names">ФИО*</label>
+                                <div class="col-xs-10">
+                                    <input type="text" maxlength="100" id="names" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group text-right">
+                                <label class="elem--label col-xs-2" for="phone">Телефон*</label>
+                                <div class="col-xs-10">
+                                    <input type="tel" maxlength="10" id="phone" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group text-right">
+                                <label class="elem--label col-xs-2" for="e-mail">e-mail*</label>
+                                <div class="col-xs-10">
+                                    <input type="email" maxlength="40" id="e-mail" class="form-control">
+                                    <p class="help-block form-help-block">* - поля обязательные для заполнения</p>
+                                </div> 
+                            </div>
+                            <div class="form-group  text-right">
+                                <div class="col-xs-10 col-xs-offset-2">
+                                    <div class="form-inline form-capcha col-xs-8">
+                                        <div class="form-group form-group--capcha">
+                                            <label class="sr-only" for="capcha">new-pass-two</label>
+                                            <input type="text" id="capcha" class="form-control" maxlength="5">
+                                        </div>
+                                        <div class="capcha"></div>
+                                        <p class="update-capcha"><a aria-hidden="true" class="elem--a" href="#"></a></p>
+                                        <p class="help-block form-help-block">Впишите в это окно символы из окошка справа</p>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <button type="submit" class="btn btn-submit btn-submit__rate">сделать заочную ставку</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                    <aside class="content--footer__lot">
+                        <div class="paginate-lot">
+                            <a href="#" class="paginate-lot--arrow paginate-lot--arrow__left"></a>
+                            <a href="catalog.html" class="paginate-lot--catalog">посмотреть все</a>
+                            <a href="#" class="paginate-lot--arrow paginate-lot--arrow__right"></a>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+        <script src="js/datetimepicker/moment.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+        <script src="js/jquery.fancybox.pack.js"></script>
+        <script src="js/proj.js"></script>
+    </body>
+</html>

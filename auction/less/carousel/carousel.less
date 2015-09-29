@@ -1,0 +1,92 @@
+.gold-line{
+    height: 6px;
+    width: 100%;
+    .box-shadow(0 5px 6px #000);
+}
+#auctionCarousel{
+    min-height: 605px !important;
+}
+.carousel{
+    .carousel-inner{
+        z-index: -1;
+        height: 100%;
+        & > .item{
+            height: 100%;
+            width: 100%;
+            & > img{
+                margin: 0 auto;
+            }
+            .carousel-caption{
+
+            }
+            .carousel-caption--auction{
+                padding: 0;
+                margin: 45px 0 0;
+                width: 440px;
+                height: 480px;
+                background-color: rgba(0,0,0,0.7);
+                .caption--img{
+                    width: 100%;
+                    height: 246px;
+                    margin: 0;
+                    overflow: hidden;
+                }
+                .gold-line{
+                    height: 20px;
+                }
+                .caption--label{
+                    font: italic 27px/28px "PalatinoLinotypeItalic";
+                    height: 214px;
+                    overflow: hidden;
+                    padding: 15px 30px 25px;
+                    .label--elem-span{
+                        display: block;
+                    }
+                    .auction-date{
+                        font-weight: bold;
+                        line-height: 37px;
+                        margin-top: 5px;
+                    }
+                    .receiving-lots{
+                        font-size: 23px;
+                        margin-top: -3px;
+                    }
+                    .receiving-lots-date{
+                        font-size: 23px;
+                        line-height: 25px;
+                    }
+                }
+            }
+        }
+    }
+    .carousel__controls{
+        width: 1000px;
+        position: absolute;
+        margin: 0 auto;
+        right: 0;
+        left: 0;
+        bottom: 30px;
+        .controls__arrow{
+            display: inline-block;
+            height: 22px;
+            background-image: @url-arrow-home;
+            background-repeat: no-repeat;
+        }
+        .controls__arrow--left{
+            background-position: left center;
+            margin-right: -15px;
+            width: 85px;
+        }
+        .controls__arrow--center{
+            background-position: -90px center;
+            width: 26px;
+            z-index: -1;
+        }
+        .controls__arrow--right{
+            background-position: right center;
+            margin-left: -14px;
+            width: 82px;
+            z-index: -1;
+        }
+    }
+}

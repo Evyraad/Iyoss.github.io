@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Auction</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    </head>
+    <body>
+        <section class="container-fluid registration">
+            <form class="row site-form form-registration">
+                <h6 class="head-form--elem-h">Регистрация</h6>
+                <div class="col-xs-6 form-col-left">
+                    <div class="form-group">
+                        <label for="last-name" class="sr-only">Фамилия</label>
+                        <input type="text" class="form-control" id="last-name" placeholder="Фамилия*" maxlength="40">
+                    </div>
+                    <div class="form-group">
+                        <label for="first-name" class="sr-only">Имя</label>
+                        <input type="text" class="form-control" id="first-name" placeholder="Имя*" maxlength="40">
+                    </div>
+                    <div class="form-group">
+                        <label for="patronymic" class="sr-only">Отчество</label>
+                        <input type="text" class="form-control" id="patronymic" placeholder="Отчество" maxlength="40">
+                    </div>
+                    <div class="form-inline">
+                        <div class="form-group form-group--reg-email">
+                            <label for="e-mail" class="sr-only">E-mail</label>
+                            <input type="email" class="form-control" id="e-mail" placeholder="e-mail*" maxlength="40">
+                        </div>
+                        <div class="radio form-group form-group--sex">
+                            <input type="radio" name="sex" id="sex-man" value="option1" >
+                            <label for="sex-man" class="sex--label">
+                                <span>M*</span>
+                                <span class="radio-form"></span>
+                            </label>
+                        </div>
+                        <div class="radio form-group form-group--sex">
+                            <input type="radio" name="sex" id="sex-woman" value="option2" >
+                            <label for="sex-woman" class="sex--label">
+                                <span>Ж*</span>
+                                <span class="radio-form"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-inline">
+                        <div class="form-group form-group--reg-region">
+                            <label for="region" class="sr-only">Регион</label>
+                            <input type="text" class="form-control" id="region" placeholder="Регион, город*" maxlength="100">
+                        </div>
+                        <div class="form-group input-group form-group--reg-index">
+                            <label for="index" class="sr-only">Индекс</label>
+                            <span class="input-group-addon">Индекс*</span>
+                            <input type="text" class="form-control" id="index" placeholder="XXXXXX" maxlength="6">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="address" class="sr-only">Адрес</label>
+                        <input type="text" class="form-control" id="address" placeholder="Улица, дом, корп., кв.*" maxlength="100">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" class="sr-only">Телефон</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="Телефон" maxlength="10">
+                        <p class="help-block form-help-block">*Поля, обязательны для заполнения</p>
+                    </div>
+                </div>
+                <div class="col-xs-6 form-col-right">
+                    <textarea id="about-me" class="form-control" rows="3" placeholder="Немного о себе*" maxlength="2500"></textarea>
+                    <div class="form-inline">
+                        <div class="form-group form-group--reg-pass">
+                            <label for="new-pass" class="sr-only">Пароль</label>
+                            <input type="text" class="form-control" id="new-pass" placeholder="Пароль*" maxlength="50">
+                        </div>
+                        <div class="radio form-group form-group--conditions">
+                            <input type="checkbox" name="conditions-1" id="conditions-1" value="conditions-1">
+                            <label for="conditions-1" class="conditions--label">
+                                <span class="label--elem-span">я ознакомлен и согласен с политикой конфиденциальности</span>
+                                <span class="radio-form"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-inline">
+                        <div class="form-group form-group--reg-pass">
+                            <label for="new-pass-two" class="sr-only">Подтвердить пароль</label>
+                            <input type="text" class="form-control" id="new-pass-two" placeholder="Подтвердить пароль*" maxlength="50">
+                        </div>
+                        <div class="radio form-group form-group--conditions">
+                            <input type="checkbox" name="conditions-2" id="conditions-2" value="conditions-2" >
+                            <label for="conditions-2" class="conditions--label">
+                                <span class="label--elem-span">я ознакомлен и согласен с правилами ркгистрации и участия в аукционе</span>
+                                <span class="radio-form"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-inline form-capcha">
+                        <div class="form-group form-group--capcha">
+                            <label class="sr-only" for="capcha">new-pass-two</label>
+                            <input type="text" id="capcha" class="form-control" maxlength="5">
+                        </div>
+                        <div class="capcha"></div>
+                        <p class="update-capcha"><a aria-hidden="true" class="elem--a" href="#"></a></p>
+                    </div>
+                    <p class="help-block form-help-block">Впишите в это окно символы из окошка справа</p>
+                    <div class="text-right">
+                        <button type="submit" class="btn btn-submit">зарегистрироваться</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/proj.js"></script>
+    </body>
+</html>

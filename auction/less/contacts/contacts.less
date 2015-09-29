@@ -1,0 +1,122 @@
+.header__contacts{
+    margin-bottom: 33px;
+    .header--contact-label{
+        .elem--h:first-child{
+            margin: 25px 0 0 0;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+        .elem--h:last-child{
+            margin: 0;
+            font: italic 28px/27px "PalatinoLinotypeItalic";
+        }
+    }
+    .header--nav{
+        margin-bottom: 0;
+    }
+}
+
+.container--content__contacts{
+    .flexbox();
+    margin-bottom: 30px;
+    .col-2{
+        margin: 0;
+    }
+}
+
+.authorization{
+    min-height: 329px;
+    position: relative;
+    .form--sineIn, .form--pass-recoverty{
+        top: 0;
+        left: 0;
+    }
+    .form--pass-recoverty{
+        top: -25px;
+        height: 354px;
+        .head-form--elem-h{
+            text-align: left;
+        }
+    }
+}
+
+.content--contacts-form{
+    margin-left: 10px;
+    background-color: #dadada;
+    .site-form__light{
+        padding: 25px;
+        .form-group, .form-inline{
+            .flexbox();
+
+        }
+        .form-group{
+            margin-bottom: 18px;
+        }
+        .form-group--date{
+            .align-items(center);
+            margin-right: 10px;
+            .elem--input{
+                width: 100px;
+            }
+            .elem--label{
+                width: 30px;
+            }
+        }
+        .form-group--topic-auction{
+            .align-items(center);
+            .elem--input{
+                width: 460px;
+            }
+            .elem--label{
+                width: 80px;
+            }
+        }
+        .elem--label{
+            font-weight: 100;
+            margin: 0 10px 0 0;
+        }
+        textarea{
+            height: 170px;
+            margin-bottom: 11px;
+        }
+        & > .form-group{
+            margin: 0;
+            & > .form-help-block{
+                margin: 0 20px 0 0;
+                width: 180px;
+            }
+            & > .form-group--conditions{
+                margin: 0 95px 0 0;
+                width: 245px;
+                .conditions--label{
+                    display: flex;
+                    padding: 0;
+                }
+            }
+            & > .btn-submit{
+                width: 160px;
+                text-transform: uppercase;
+                border: 1px solid @body-bg;
+            }
+        }
+    }
+}
+.rules{
+    font-size: 16px;
+    .elem--i{
+        font:italic 27px "PalatinoLinotypeItalic";
+        margin-left: 10px;
+    }
+    .rules--list{
+        padding: 0 0 0 20px;
+        .list--elem{
+            padding: 5px;
+            
+        }
+    }
+}
+
+.gold-line__contacts{
+    height: 15px;
+    min-width: 1230px;
+}

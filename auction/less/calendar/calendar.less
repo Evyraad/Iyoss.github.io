@@ -1,0 +1,179 @@
+.header__calendar{
+    margin-bottom: 20px;
+    .header--contact-label{
+        .elem--h:first-child{
+            margin: 25px 0 0 0;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+        .elem--i{
+            text-transform: none;
+            margin: 0 0 0 15px;
+            font:italic 30px "PalatinoLinotypeItalic";
+        }
+    }
+    .header--nav{
+        margin-bottom: 0;
+    }
+}
+.container--content__calendar{
+    display: flex;
+    margin-bottom: 30px;
+    .col-1{
+        .flex-shrink(0);
+        margin-right: 10px;
+    }
+    
+    .col-2{
+        background-color: @bg-content;
+    }
+    
+    .calendar--month{
+        position: relative;
+        height: 100%;
+        .month--list{
+            font: 20px "PalatinoLinotypeItalic";
+            padding: 67px 60px 0 40px;
+            margin: 0 28px 0 0;
+            border-top: 1px solid @line-color;
+            border-right: 1px solid @line-color;
+            height: 100%;
+            .list--elem{
+                position: relative;
+                .elem--a{
+                    color: @line-color;
+                    &:hover, &:focus{
+                        text-decoration: none;
+                    }
+                    .elem--month-year{
+                        .flexbox();
+                        .justify-content(space-between);
+                    }
+                }
+                border-bottom: 1px solid; 
+                padding: 15px 25px;
+                &:first-child{
+                    padding-top: 0;
+                }
+            }
+            .active-month{
+                height: 57px;
+                padding-bottom: 14px;
+                .elem--a{
+                    background-color: rgb(218, 218, 218);
+                    left: 0;
+                    position: absolute;
+                    right: -100px;
+                    top: 15px;
+                    color: @body-bg;
+                    .elem--month-year{
+                        .flexbox();
+                        .justify-content(space-between);
+                        padding-left: 25px;
+                        width: 289px;
+                    }
+                }
+            }
+        }
+    }
+}
+.content--calendar{
+    height: 100%;
+    table{
+        border-collapse: separate;
+        border-spacing: 20px 4px;
+        padding: 35px 30px 0;
+        color: @body-bg;
+        margin: 0;
+        caption{
+            display: table-caption;
+            padding: 0 0 20px 0;
+            margin-bottom: 0;
+            background-color: @body-bg;
+            .caption{
+                .flexbox();
+                .justify-content(space-between);
+                font: 38px/47px "PalatinoLinotypeItalic";
+                color: @line-color;
+                padding: 0 30px;
+            }
+        }
+        thead{
+            font-size: 25px;
+            tr{
+                display: block;
+                th{
+                    text-align: center;
+                    font-weight: 100;
+                    border: none;
+                    width: 72px;
+                    padding: 0;
+                }
+            }
+        }
+        tbody{
+            font:italic 30px "PalatinoLinotypeItalic";
+            text-align: center;
+            position: relative;
+            tr{
+                display: block;
+                position: relative;
+                td{
+                    height: 43px;
+                    width: 72px;
+                    padding: 0;
+                    border: none;
+                }
+                &:after{
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    left: 0;
+                    bottom: 0;
+                    height: 1px;
+                    width: 100%;
+                    background-color: @body-bg;
+                }
+                &:last-child:after{
+                    content: "";
+                    display: none;
+                }
+            }
+        }
+    }
+    .month--event{
+        background-color: @bg-month-event-calendar;
+        color: @line-color;
+    }
+}
+
+.month--events{
+    background-color: @bg-content;
+    padding: 0 35px 30px;
+    color: @body-bg;
+    .events--list{
+        .list--elem{
+            margin-bottom: 2px;
+            font: italic 20px "PalatinoLinotypeItalic";
+            color: @line-color;
+            .flexbox();
+            height: 45px;
+        }
+        .elem--date,
+        .elem--auction{
+            height: auto;
+            background-color: @bg-month-event-calendar;
+            display: inline-block;
+            padding: 10px;
+        }
+        .elem--date{
+            width: 81px;
+            margin-right: 2px;
+            text-align: center;
+        }
+        .elem--auction{
+            width: 597px;
+            padding-left: 25px;
+        }
+    }
+}

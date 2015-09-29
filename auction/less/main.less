@@ -1,0 +1,71 @@
+//General styles for the site
+@body-bg: #000;
+@line-color: #fff;
+@darken-line-color: darken(@line-color, 31%);
+@button-submit: #9d9d9c;
+@gold: #9b7149;
+@bg-content: #dadada;
+@color-catalog-icon: #beaa8c;
+@description-about-as: #363635;
+@bg-month-event-calendar: #3c3c3b;
+
+@url-arrow-home: url( ../images/arrow/arrow.png);
+@url-arrow-lot: url( ../images/arrow/arrow-2.png);
+@url-arrow-lot-paginate: url( ../images/arrow/arrow-3.png);
+@url-arrow-capcha: url(../images/arrow/arrow-capcha.png);
+@url-bg-about-us: url(../images/about-us/books-bg.png);
+@url-tick-form: url("../images/tick.png");
+@url-tick-form-light: url("../images/tick-light-form.png");
+
+
+body{
+    background-color: @body-bg;
+    font-family: "PTSansNarrowRegular";
+}
+
+.col-1{
+    width: 440px;
+    float: left;
+    display: block;
+    position: relative;
+}
+
+.col-2{
+    width: 760px;
+    float: right;
+    display: block;
+    position: relative;
+}
+.container-fluid--content{
+    height: auto;
+    min-width: 1230px;
+    padding: 0;
+}
+.container--content{
+    .container();
+}
+.margin-bottom{
+    margin-bottom: 20px;
+}
+
+a:focus, button:focus, button:active{
+    outline: #fff solid 0 !important;
+}
+
+.content--catalog{
+    color: @body-bg;
+}
+
+.gold-line{
+    background-color: #503723;
+    .repeating-linear-gradient(~"-90deg, #503723 0%, #9b7149 12%, #503723 25%");
+}
+
+#sticky-sidebar.affix-top{
+    width: 370px;
+}
+#sticky-sidebar.affix{
+    position: fixed;
+    top: 20px;
+    width: 370px;
+}

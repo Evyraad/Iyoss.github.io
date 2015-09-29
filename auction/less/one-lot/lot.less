@@ -1,0 +1,170 @@
+.content--preview__lot{
+    .auction-number{
+        font: normal 21px/1.1 "PTSansNarrowRegular";
+        margin: 0 0 15px 0;
+    }
+}
+
+#carousel-one-lot{
+    margin: 35px 0 48px 0;
+    .carousel-inner{
+        z-index: 0 !important;
+    }
+    .item{
+        .wrapper-preview-img:first-child{
+            text-align: right;
+        }
+        .wrapper-preview-img:last-child{
+            text-align: left;
+        }
+    }
+
+    .carousel__controls{
+        position: relative;
+        width: auto;
+        height: auto;
+        bottom: 0;
+        .controls__arrow{
+            background-image: @url-arrow-lot;
+        }
+        .controls__arrow--left{
+            background-position: left center;
+            margin-right: -3px;
+            width: 55px;
+        }
+        .controls__arrow--right{
+            background-position: right center;
+            margin-left: -3px;
+            width: 55px;
+        }
+    }
+
+    .preview-img{
+        /*cursor: pointer;*/
+        background-color: @line-color;
+        padding: 17px 24px;
+        width: 118px;
+        height: 134px;
+        margin: 0;
+        display: inline-block;
+    }
+
+    .gold-line{
+        position: relative;
+        margin: 30px 0;
+        bottom: 0;
+    }
+}
+
+.content--catalog__lot{
+    padding-bottom: 100px;
+    .auction-name{
+        font: italic 21pt "PalatinoLinotypeItalic";
+        margin: 8px 0 0;
+    }
+
+    .auction-date{
+        margin: 0;
+        font-family: "PTSansNarrowBold";
+    }
+
+    .book--price{
+        font-size: 30px;
+        font-family: "PTSansNarrowBold";
+    }
+
+    .site-form__light{
+        padding: 15px 0;
+        .col-xs-2{
+            padding-right: 5px;
+        }
+        .col-xs-10{
+            padding-left: 20px;
+        }
+    }
+
+    .form-help-block{
+        display: block;
+        color: @body-bg;
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .elem--label{
+        font-size: 17px;
+        font-weight: 100;
+        line-height: 15px;
+        padding-top: 5px; 
+    }
+
+    .form-capcha{
+        padding-left: 0;
+        text-align: left;
+        .capcha{
+            border-color: @body-bg;
+            width: 140px;
+        }
+        #capcha{
+            width: 140px;
+        }
+        .update-capcha{
+            color: @body-bg;
+        }
+    }
+    
+    .form-capcha+.col-xs-4{
+        padding: 0;
+    }
+    
+    .btn-submit__rate{
+        text-transform: uppercase; 
+    }
+}
+
+.content--footer__lot{
+    position: absolute;
+    height: 70px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    .flexbox();
+}
+.paginate-lot{
+    .flexbox();
+    .justify-content(center);
+    max-width: 372px;
+    margin: 0 auto;
+    color: @body-bg;
+    position: relative;
+    width: 100%;
+    .paginate-lot--catalog{
+        text-transform: uppercase;
+        border: 1px solid @body-bg;
+        border-bottom: none;
+        padding: 20px 50px;
+        text-decoration: none;
+        color: @body-bg;
+        text-align: center;
+        width: 242px;
+        font-size: 16px;
+        &:hover{
+            color: @body-bg;
+        }
+    }
+    .paginate-lot--arrow{
+        display: inline-block;
+        position: absolute;
+        width: 50px;
+        height: 20px;
+        top: 22px;
+        background: transparent @url-arrow-lot-paginate center left no-repeat;
+    }
+    .paginate-lot--arrow__right{
+        background-position: center right;
+        right: 0;
+    }
+    .paginate-lot--arrow__left{
+        left: 0;
+    }
+}

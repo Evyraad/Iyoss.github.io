@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Auction</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    </head>
+    <body>
+        <header class="container-fluid container-fluid--header header__contacts">
+            <div class="container--header">
+                <hgroup class="col-1 header--contact-label">
+                    <h1 class="elem--h">контакты</h1>
+                    <h3 class="elem--h">оставить заявку на участие</h3>
+                </hgroup>
+                <nav class="header--nav col-2">
+                    <ul class="nav--list list-inline text-left">
+                        <li class="list--elem"><a class="elem--a" href="home.html">главная</a></li>
+                        <li class="list--elem"><a class="elem--a" href="#">новости</a></li>
+                        <li class="list--elem">
+                            <a class="elem--a" href="calendar.html">календарь</a>
+                            <ul class="elem--child list-unstyled text-center">
+                                <li class="list--elem list--elem__child"><a class="elem--a" href="#">Общие положения и правила</a></li>
+                                <li class="list--elem list--elem__child"><a class="elem--a" href="#">Правила участия в аукционах</a></li>
+                            </ul>
+                        </li>
+                        <li class="list--elem"><a class="elem--a" href="about-us.html">о нас</a></li>
+                        <li class="list--elem"><a class="elem--a" href="catalog.html">каталог</a></li>
+                        <li class="list--elem">
+                            <a class="elem--a" href="#">правила</a>
+                            <ul class="elem--child list-unstyled text-center">
+                                <li class="list--elem list--elem__child"><a class="elem--a" href="#">Общие положения и правила</a></li>
+                                <li class="list--elem list--elem__child"><a class="elem--a" href="#">Правила участия в аукционах</a></li>
+                            </ul>
+                        </li>
+                        <li class="list--elem"><a class="elem--a" href="#">контакты</a></li>
+                    </ul>
+                </nav> 
+            </div>
+        </header>
+        <div class="container-fluid container-fluid--content">
+            <div class="container--content container--content__contacts">
+                <div class="col-1 ">
+                    <section class="authorization">
+                        <form class="form--sineIn site-form" role="form">
+                            <div class="form-group">
+                                <label for="name-user" class="sr-only">name-user</label>
+                                <input type="email" class="form-control" id="name-user" placeholder="e-mail" maxlength="40">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="sr-only">password</label>
+                                <input type="text" class="form-control" id="password" placeholder="Пароль">
+                            </div>
+                            <p id="password-recovery" class="text-right forgot-password"><a href="#" class="elem--a">Забыли пароль?</a></p>
+                            <div class="btn-group">
+                                <div class="btn-group--btn-sineIn">
+                                    <button type="submit" class="btn btn-sineIn">Войти</button>
+                                </div>
+                                <div class="btn-group--btn-registration">
+                                    <a class="btn btn-registration btn-submit" role="button" href="registration.html">Пройти регистрацию</a>
+                                </div>
+                            </div>
+                        </form>
+                        <form class="form--pass-recoverty site-form hide-elem" role="form">
+                            <h6 class="text-right head-form--elem-h">Восстановление пароля</h6>
+                            <div class="form-group">
+                                <label for="e-mail" class="sr-only">e-mail</label>
+                                <input type="email" class="form-control" id="e-mail" placeholder="e-mail" maxlength="40">
+                                <p class="help-block form-help-block">На Ваш E-mail придет подтверждение о смене пароля</p>
+                            </div>
+                            <div class="form-group">
+                                <label for="new-pass" class="sr-only">new-pass</label>
+                                <input type="text" class="form-control" id="new-pass" placeholder="Новый пароль*">
+                            </div>
+                            <div class="form-group">
+                                <label for="new-pass-two" class="sr-only">new-pass-two</label>
+                                <input type="text" class="form-control" id="new-pass-two" placeholder="Подтвердить новый пароль*">
+                            </div>
+                            <div class="form-capcha">
+                                <div class="form-group form-group--capcha">
+                                    <label for="capcha" class="sr-only">new-pass-two</label>
+                                    <input type="text" class="form-control" id="capcha" maxlength="5">
+                                </div>
+                                <div class="capcha"></div>
+                                <p class="update-capcha"><a href="#" class="elem--a" aria-hidden="true"></a></p>
+                            </div>
+                            <p class="help-block form-help-block margin-bottom">Впишите в это окно символы из окошка справа</p>
+                            <button type="submit" class="btn btn-submit">Изменить пароль</button>
+                        </form>
+                    </section>
+                </div>
+                <div class="col-2">
+                    <section class="content--contacts-form">
+                        <form role="form" class="site-form site-form__light">
+                            <div class="form-inline">
+                                <div class="form-group form-group--date">
+                                    <label for="date" class="elem--label">дата*</label>
+                                    <input type="text" class="elem--input form-control" id="datetimepicker" placeholder="дд.мм.гггг">
+                                </div>
+                                <div class="form-group form-group--topic-auction">
+                                    <label for="topic-auction" class="elem--label">Тема аукциона*</label>
+                                    <input type="text" class="elem--input form-control" id="topic-auction" maxlength="100">
+                                </div>
+                            </div>
+                            <textarea maxlength="2500" placeholder="Ваши пожелания" class="form-control" id="wishes"></textarea>
+                            <div class="form-group">
+                                <p class="help-block form-help-block">*Поля, обязательны для заполнения</p>
+                                <div class="radio form-group form-group--conditions">
+                                    <input type="checkbox" value="conditions-2" id="conditions-2" name="conditions-2">
+                                    <label class="conditions--label" for="conditions-2">
+                                        <span class="label--elem-span">я ознакомлен и согласен с правилами ркгистрации и участия в аукционе</span>
+                                        <span class="radio-form"></span>
+                                    </label>
+                                </div>
+                                <button class="btn btn-submit" type="submit">отправить</button>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="gold-line gold-line__contacts"></div>
+        <div class="container-fluid container-fluid--content">
+            <div class="container--content">
+                <div class="row regulations">
+                    <aside class="col-xs-6 rules">
+                        <h4>Правила<i class="elem--i">Общие</i></h4>
+                        <p>Русская литература ХIХ века заслужено названа 
+                            "Золотым веком».  Даже несведущий в литературе, 
+                            не сможет возразить. Она стала законодательницей 
+                            литературной моды, стремительно ворвавшись в 
+                            мировую литературу. "Золотой век" подарил нам 
+                            многих известных мастеров. 
+                        </p>
+                        <ol class="rules--list">
+                            <li class="list--elem">правило</li>
+                            <li class="list--elem">правило</li>
+                            <li class="list--elem">правило</li>
+                            <li class="list--elem">правило</li>
+                        </ol>
+                    </aside>
+                    <aside class="col-xs-6 rules">
+                        <h4>Правила<i class="elem--i">Участия в аукционе</i></h4>
+                        <p>Русская литература ХIХ века заслужено названа 
+                            "Золотым веком».  Даже несведущий в литературе, 
+                            не сможет возразить. Она стала законодательницей 
+                            литературной моды, стремительно ворвавшись в 
+                            мировую литературу. "Золотой век" подарил нам 
+                            многих известных мастеров. 
+                        </p>
+                        <ol class="rules--list">
+                            <li class="list--elem">правило</li>
+                            <li class="list--elem">правило</li>
+                            <li class="list--elem">правило</li>
+                            <li class="list--elem">правило</li>
+                        </ol>
+                    </aside>
+                </div>
+            </div>
+        </div>
+        <script src="js/datetimepicker/moment.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+        <script src="js/proj.js"></script>
+    </body>
+</html>
